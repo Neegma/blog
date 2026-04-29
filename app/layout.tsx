@@ -14,12 +14,12 @@ export const metadata: Metadata = {
     openGraph: {
         type: "website",
         siteName: "Neegma Blog",
-        images: [{ url: "/neegma_black.svg" }],
+        images: [{ url: "https://res.cloudinary.com/dzpntisxj/image/upload/v1777444818/Neegma/neegma_gradient_2_cdqs49.png" }],
     },
     twitter: {
         card: "summary_large_image",
         creator: "@deo_joe",
-        images: ["/neegma_black.svg"],
+        images: ["https://res.cloudinary.com/dzpntisxj/image/upload/v1777444818/Neegma/neegma_gradient_2_cdqs49.png"],
     },
 };
 
