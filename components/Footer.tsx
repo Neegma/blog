@@ -3,14 +3,14 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { InstagramLogo, LinkedinLogo, TiktokLogo } from "@phosphor-icons/react";
+import { InstagramLogoIcon, LinkedinLogoIcon, TiktokLogoIcon } from "@phosphor-icons/react";
 
 import logo from "../public/logo-white.png";
 
 const socialLinks = [
-    { icon: InstagramLogo, label: "Instagram", href: "https://www.instagram.com/tryneegma/" },
-    { icon: LinkedinLogo, label: "LinkedIn", href: "https://www.linkedin.com/company/neegma/" },
-    { icon: TiktokLogo, label: "Tiktok", href: "https://www.tiktok.com/@tryneegma" },
+    { icon: InstagramLogoIcon, label: "Instagram", href: "https://www.instagram.com/tryneegma/" },
+    { icon: LinkedinLogoIcon, label: "LinkedIn", href: "https://www.linkedin.com/company/neegma/" },
+    { icon: TiktokLogoIcon, label: "Tiktok", href: "https://www.tiktok.com/@tryneegma" },
 ];
 
 const footerLinks = {
