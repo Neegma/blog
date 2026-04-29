@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
     title: "Neegma Blog",
     description:
-        "Updates, stories, and insights from the team building Neegma — real social games for any gathering.",
+        "Updates, stories, and insights from the Neegma team. Real social games for any gathering — one link, no downloads, everyone's in.",
 };
 
 // Replace with real post data fetched from your CMS or MDX files
@@ -14,14 +14,14 @@ export default function BlogHome() {
     return (
         <main className="mx-auto max-w-2xl px-6 py-20">
             <header className="mb-16">
-                <Link href="https://neegma.com" className="text-sm text-coral-500 hover:underline">
-                    ← neegma.com
+                <Link href="https://tryneegma.com" className="text-sm text-coral-500 hover:underline">
+                    ← Back to website
                 </Link>
                 <h1 className="mt-4 font-fredoka text-4xl font-semibold text-navy-900">
                     Neegma Blog
                 </h1>
                 <p className="mt-2 text-lg text-navy-700/70">
-                    Updates, stories, and insights from the team.
+                    Updates, stories, and insights from the Neegma team.
                 </p>
             </header>
 

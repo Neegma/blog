@@ -4,6 +4,7 @@
     "private": true,
     "scripts": {
         "dev": "next dev",
+        "prebuild": "node ./sitemap/generate-sitemap.js",
         "build": "next build",
         "start": "next start",
         "lint": "eslint .",
@@ -13,6 +14,8 @@
         "format:lint": "pnpm format && pnpm lint:fix"
     },
     "dependencies": {
+        "@phosphor-icons/react": "^2.1.10",
+        "framer-motion": "^12.38.0",
         "next": "16.2.4",
         "react": "19.2.4",
         "react-dom": "19.2.4"
@@ -26,6 +29,7 @@
         "eslint": "^9",
         "eslint-config-next": "16.2.4",
         "eslint-config-prettier": "^10.1.8",
+        "globby": "^16.2.0",
         "prettier": "^3.0.0",
         "tailwindcss": "^4",
         "typescript": "^5"

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { fredoka, ibmPlexSans, notoSerif } from "@/styles/fonts";
+import Footer from "@/components/Footer";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -8,15 +9,17 @@ export const metadata: Metadata = {
         template: "%s | Neegma Blog",
     },
     description:
-        "Updates, stories, and insights from the team building Neegma — real social games for any gathering.",
+        "Updates, stories, and insights from the Neegma team. Real social games for any gathering — one link, no downloads, everyone's in.",
     icons: { icon: "/favicon.ico" },
     openGraph: {
         type: "website",
         siteName: "Neegma Blog",
+        images: [{ url: "/neegma_black.svg" }],
     },
     twitter: {
         card: "summary_large_image",
         creator: "@deo_joe",
+        images: ["/neegma_black.svg"],
     },
 };
 
@@ -26,8 +29,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             lang="en"
             className={`${fredoka.variable} ${ibmPlexSans.variable} ${notoSerif.variable}`}
         >
-            <body className="min-h-screen bg-background text-foreground antialiased">
-                {children}
+            <body className="min-h-screen bg-background text-foreground antialiased flex flex-col">
+                <div className="flex-1">{children}</div>
+                <Footer />
             </body>
         </html>
     );
