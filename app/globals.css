@@ -7,9 +7,15 @@
     --color-navy-700: #252e3f;
     --color-navy-600: #0d0b3e;
     --color-navy-500: #0f0a24;
+    /* Coral 500 is the brand mark, but ~3.2:1 on white — only use on solid surfaces.
+       Coral 400 (5.45:1) is the contrast-safe "ink" tone for text-on-white. */
     --color-coral-400: #b33f62;
     --color-coral-500: #f9564f;
     --color-coral-600: #e84a45;
+    /* Neegma purple ladder — purple-700 is AAA on white. */
+    --color-purple-300: #d15bff;
+    --color-purple-500: #af3b96;
+    --color-purple-700: #7b1e7a;
 
     /* Semantic tokens */
     --color-background: #ffffff;
@@ -20,6 +26,21 @@
     --font-serif: var(--noto-serif), serif;
     --font-heading: var(--noto-serif), serif;
     --font-fredoka: var(--font-fredoka), sans-serif;
+}
+
+@utility bg-neegma-gradient {
+    background-image: linear-gradient(135deg, #f9564f 0%, #af3b96 60%, #7b1e7a 100%);
+}
+
+@utility bg-neegma-logo-gradient {
+    background-image: linear-gradient(180deg, #f9564f 0%, #e8453e 100%);
+}
+
+@utility text-neegma-gradient {
+    background-image: linear-gradient(135deg, #f9564f 0%, #af3b96 65%, #7b1e7a 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 html {
