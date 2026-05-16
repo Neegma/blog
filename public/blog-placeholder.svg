@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="600" height="360" role="img" aria-label="Image coming soon">
+  <defs>
+    <pattern id="dots" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.5" fill="rgba(255,255,255,0.35)" />
+    </pattern>
+  </defs>
+  <rect width="600" height="360" fill="#F9564F" />
+  <rect width="600" height="360" fill="url(#dots)" />
+  <g transform="translate(300 180)" text-anchor="middle">
+    <text font-family="system-ui, -apple-system, sans-serif" font-size="28" font-weight="700" fill="#ffffff" y="-6">PLACEHOLDER</text>
+    <text font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="500" fill="rgba(255,255,255,0.85)" y="24">Cover image coming soon</text>
+  </g>
+</svg>

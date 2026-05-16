@@ -1,5 +1,7 @@
 // eslint-disable-next-line @typescript-eslint/no-require-imports
 const fs = require("fs");
+// eslint-disable-next-line @typescript-eslint/no-require-imports
+const nodePath = require("path");
 
 const generateSitemap = async () => {
     const { globby } = await import("globby");
@@ -18,10 +20,14 @@ const generateSitemap = async () => {
         return path === "" ? baseUrl : `${baseUrl}/${path}`;
     });
 
-    // Add individual post URLs here once your content source is wired up.
-    // e.g. const posts = await fetchAllPosts();
-    // const postUrls = posts.map(p => `${baseUrl}/${p.slug}`);
-    const postUrls = [];
+    // Read post URLs from /posts directory
+    const postsDir = nodePath.join(__dirname, "..", "posts");
+    const postUrls = fs.existsSync(postsDir)
+        ? fs
+              .readdirSync(postsDir)
+              .filter((f) => f.endsWith(".md"))
+              .map((f) => `${baseUrl}/${f.replace(/\.md$/, "")}`)
+        : [];
 
     const allUrls = [...staticUrls, ...postUrls];
 

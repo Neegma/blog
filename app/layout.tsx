@@ -4,12 +4,34 @@ import Footer from "@/components/Footer";
 import "./globals.css";
 
 export const metadata: Metadata = {
+    metadataBase: new URL("https://blog.tryneegma.com"),
     title: {
         default: "Neegma Blog",
         template: "%s | Neegma Blog",
     },
     description:
-        "Updates, stories, and insights from the Neegma team. Real social games for any gathering — one link, no downloads, everyone's in.",
+        "Event recaps, host playbooks, and behind-the-scenes notes from the Neegma team. Real social games for any gathering, one link, no downloads, everyone is in.",
+    keywords: [
+        "Neegma blog",
+        "social games",
+        "party games",
+        "interactive games",
+        "team building games",
+        "event games",
+        "live game show",
+        "game night ideas",
+        "audience engagement",
+        "host playbook",
+        "event recap",
+        "QR code games",
+        "no download games",
+        "Kahoot alternative",
+        "Jackbox alternative",
+        "trivia games",
+        "Charades online",
+        "Taboo online",
+        "Find the Mole game",
+    ],
     icons: { icon: "/favicon.ico" },
     openGraph: {
         type: "website",
