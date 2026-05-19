@@ -2,13 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://blog.tryneegma.com</loc>
-        <lastmod>2026-05-13T09:09:06.675Z</lastmod>
+        <lastmod>2026-05-16T07:44:57.638Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://blog.tryneegma.com/builders-in-fintech-masterclass-icebreaker</loc>
+        <lastmod>2026-05-16T07:44:57.638Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://blog.tryneegma.com/lemfi-manchester-community-event-recap</loc>
+        <lastmod>2026-05-16T07:44:57.638Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
         <loc>https://blog.tryneegma.com/wajeun-eat-and-play-recap</loc>
-        <lastmod>2026-05-13T09:09:06.675Z</lastmod>
+        <lastmod>2026-05-16T07:44:57.638Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>

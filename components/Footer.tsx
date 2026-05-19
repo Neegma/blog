@@ -2,9 +2,11 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { InstagramLogoIcon, LinkedinLogoIcon, TiktokLogoIcon } from "@phosphor-icons/react";
 
+import TrackedLink from "./TrackedLink";
+import { trackClickCta } from "@/lib/events";
 import logo from "../public/logo-white.png";
 
 const socialLinks = [
@@ -25,6 +27,7 @@ const footerLinks = {
 };
 
 function Footer() {
+    const pathname = usePathname() || "/";
     return (
         <footer className="relative z-10 border-t border-navy-900/10">
             <div className="container mx-auto px-4 md:px-8 py-12">
@@ -37,7 +40,12 @@ function Footer() {
                             viewport={{ once: true }}
                             className="flex items-center gap-3 mb-4 w-fit mx-auto md:mx-0"
                         >
-                            <Link href="https://tryneegma.com" className="flex items-center gap-3 group">
+                            <TrackedLink
+                                href="https://tryneegma.com"
+                                ctaText="Visit Neegma (footer brand)"
+                                sourcePage={pathname}
+                                className="flex items-center gap-3 group"
+                            >
                                 <div className="w-12 h-12 bg-[linear-gradient(180deg,#F9564F_0%,#E8453E_100%)] rounded-full flex items-center justify-center transition-transform group-hover:scale-105">
                                     <Image
                                         src={logo}
@@ -49,7 +57,7 @@ function Footer() {
                                 <span className="text-navy-900 text-2xl font-fredoka font-semibold">
                                     Neegma
                                 </span>
-                            </Link>
+                            </TrackedLink>
                         </motion.div>
 
                         <p className="text-navy-900/60 mb-6 max-w-sm mx-auto md:mx-0 text-center md:text-left">
@@ -65,6 +73,13 @@ function Footer() {
                                     <a
                                         key={social.label}
                                         href={social.href}
+                                        onClick={() =>
+                                            trackClickCta({
+                                                cta_text: `Social ${social.label} (footer)`,
+                                                link_url: social.href,
+                                                source_page: pathname,
+                                            })
+                                        }
                                         className="w-10 h-10 rounded-full bg-navy-900/8 hover:bg-[linear-gradient(180deg,#F9564F_0%,#E8453E_100%)] flex items-center justify-center transition-all border border-navy-900/10 hover:border-coral-500/50 group"
                                         aria-label={social.label}
                                         target="_blank"
@@ -93,12 +108,14 @@ function Footer() {
                             <ul className="space-y-2">
                                 {links.map((link) => (
                                     <li key={link.label} className="list-none">
-                                        <Link
+                                        <TrackedLink
                                             href={link.href}
+                                            ctaText={`Footer ${category} - ${link.label}`}
+                                            sourcePage={pathname}
                                             className="text-navy-900/60 hover:text-coral-500 transition-colors"
                                         >
                                             {link.label}
-                                        </Link>
+                                        </TrackedLink>
                                     </li>
                                 ))}
                             </ul>
@@ -117,26 +134,30 @@ function Footer() {
                         © {new Date().getFullYear()} Neegma. All rights reserved.
                     </p>
                     <div className="flex gap-6 text-navy-900/50 text-sm">
-                        <Link
+                        <TrackedLink
                             href="https://tryneegma.com/terms"
+                            ctaText="Footer - Terms"
+                            sourcePage={pathname}
                             className="hover:text-navy-900 transition-colors"
                         >
                             Terms & Conditions
-                        </Link>
+                        </TrackedLink>
                         <span className="hidden md:inline-block">•</span>
-                        <Link
+                        <TrackedLink
                             href="https://tryneegma.com/privacy"
+                            ctaText="Footer - Privacy"
+                            sourcePage={pathname}
                             className="hover:text-navy-900 transition-colors"
                         >
                             Privacy Policy
-                        </Link>
+                        </TrackedLink>
                         <span className="hidden md:inline-block">•</span>
-                        <Link
+                        <a
                             href="/sitemap.xml"
                             className="hover:text-navy-900 transition-colors"
                         >
                             Sitemap
-                        </Link>
+                        </a>
                     </div>
                 </motion.div>
             </div>

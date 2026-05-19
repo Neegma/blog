@@ -4,10 +4,13 @@ import { motion } from "framer-motion";
 import { ArrowRightIcon } from "@phosphor-icons/react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
+import TrackedLink from "./TrackedLink";
 import logoWhite from "../public/logo-white.png";
 
 export default function Header() {
+    const pathname = usePathname() || "/";
     return (
         <motion.header
             initial={{ y: -60, opacity: 0 }}
@@ -31,13 +34,15 @@ export default function Header() {
                     </span>
                 </Link>
 
-                <a
+                <TrackedLink
                     href="https://tryneegma.com"
+                    ctaText="Visit Neegma (header)"
+                    sourcePage={pathname}
                     className="inline-flex items-center gap-1.5 md:gap-2 px-4 md:px-5 py-2 md:py-2.5 font-fredoka font-semibold text-white text-xs md:text-sm rounded-full transition-all hover:opacity-90 hover:scale-[1.03] bg-neegma-gradient shadow-sm"
                 >
                     Visit Neegma
                     <ArrowRightIcon size={12} weight="bold" />
-                </a>
+                </TrackedLink>
             </div>
         </motion.header>
     );

@@ -1,12 +1,14 @@
 import { notFound } from "next/navigation";
 import { ArrowRightIcon } from "@phosphor-icons/react/dist/ssr";
 import Image from "next/image";
-import Link from "next/link";
 
 import Breadcrumb from "@/components/Breadcrumb";
 import Header from "@/components/Header";
 import PostContent from "@/components/PostContent";
 import PostNav from "@/components/PostNav";
+import PostViewTracker from "@/components/PostViewTracker";
+import ScrollDepthTracker from "@/components/ScrollDepthTracker";
+import TrackedLink from "@/components/TrackedLink";
 import {
     formatPostDate,
     getAdjacentPosts,
@@ -58,8 +60,19 @@ export default async function PostPage({ params }: Props) {
 
     const { previous, next } = getAdjacentPosts(slug);
 
+    const wordCount = post.content ? post.content.split(/\s+/).filter(Boolean).length : undefined;
+
     return (
         <>
+            <PostViewTracker
+                post_title={post.title}
+                post_slug={post.slug}
+                author={post.author || undefined}
+                category={post.tags[0]}
+                tags={post.tags.join(",") || undefined}
+                word_count={wordCount}
+            />
+            <ScrollDepthTracker postSlug={post.slug} />
             <Header />
             <main className="bg-white text-navy-900">
                 <div className="bg-[#FFF7F6] border-b border-navy-900/5">
@@ -141,13 +154,16 @@ export default async function PostPage({ params }: Props) {
                         </div>
                         <PostNav previous={previous} next={next} />
                         <div className="mt-10 text-center">
-                            <Link
+                            <TrackedLink
                                 href="/"
+                                ctaText="Back to all posts"
+                                sourcePage={`/${post.slug}`}
+                                sourcePost={post.slug}
                                 className="inline-flex items-center gap-2 text-sm font-bold font-fredoka text-coral-400 hover:text-purple-700 transition-colors"
                             >
                                 Back to all posts
                                 <ArrowRightIcon size={12} weight="bold" />
-                            </Link>
+                            </TrackedLink>
                         </div>
                     </div>
                 </section>
