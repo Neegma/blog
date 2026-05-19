@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { fredoka, ibmPlexSans, notoSerif } from "@/styles/fonts";
+import Analytics from "@/components/Analytics";
 import Footer from "@/components/Footer";
 import "./globals.css";
 
@@ -52,6 +53,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             className={`${fredoka.variable} ${ibmPlexSans.variable} ${notoSerif.variable}`}
         >
             <body className="min-h-screen bg-background text-foreground antialiased flex flex-col">
+                <Analytics />
                 <div className="flex-1">{children}</div>
                 <Footer />
             </body>

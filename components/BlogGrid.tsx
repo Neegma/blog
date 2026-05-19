@@ -1,7 +1,7 @@
 import Image from "next/image";
-import Link from "next/link";
 import { ArrowRightIcon } from "@phosphor-icons/react/dist/ssr";
 
+import TrackedLink from "./TrackedLink";
 import { formatPostDate } from "@/lib/posts";
 
 import type { PostMeta } from "@/lib/posts";
@@ -14,8 +14,10 @@ export function BlogCard({ post }: { post: PostMeta }) {
     const tag = post.tags[0];
     return (
         <li className="list-none">
-            <Link
+            <TrackedLink
                 href={`/${post.slug}`}
+                ctaText={`Open post: ${post.title}`}
+                sourcePage="/"
                 className="group block h-full overflow-hidden rounded-2xl bg-white border border-navy-900/10 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-navy-900/25"
             >
                 <div className="relative h-48 w-full overflow-hidden bg-neegma-gradient">
@@ -50,7 +52,7 @@ export function BlogCard({ post }: { post: PostMeta }) {
                         <ArrowRightIcon size={12} weight="bold" />
                     </span>
                 </div>
-            </Link>
+            </TrackedLink>
         </li>
     );
 }
