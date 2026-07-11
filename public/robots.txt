@@ -1,0 +1,7 @@
+# Neegma Blog robots.txt
+# All content is public. Open to every crawler, including AI answer engines.
+
+User-agent: *
+Allow: /
+
+Sitemap: https://blog.tryneegma.com/sitemap.xml
