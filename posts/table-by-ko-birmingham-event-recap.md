@@ -4,6 +4,7 @@ description: "A recap of how Neegma powered Song Association and Find the Mole a
 date: "2026-06-18"
 slug: "table-by-ko-birmingham-event-recap"
 excerpt: "Great food brings people together, but shared laughter creates real connection. Here is how Table by KO used custom Song Association and Find the Mole on Neegma to break the ice at their Birmingham networking event."
+coverImage: "https://res.cloudinary.com/dzpntisxj/image/upload/v1783757365/Neegma/events/table_by_ko_banner_odnw5a.jpg"
 keywords:
     - Neegma case study
     - Table by KO Birmingham
@@ -23,11 +24,9 @@ tags:
 author: "Neegma Team"
 ---
 
-<!-- COVER IMAGE: add your banner to the frontmatter above as `coverImage: /images/table-by-ko-birmingham-event-recap/cover.jpg` and `coverImageAlt: ...`. Until then it falls back to /blog-placeholder.svg. -->
+Great food brings people together, but shared laughter creates genuine connection. [Table by KO](https://www.instagram.com/tablebyko) is a private, Birmingham-based community built around good food and thoughtful people. Their motto, "Come for the food. Stay for the connection," aligned perfectly with our mission when they hosted their Saturday networking event on June 13, 2026. The organisers wanted an engaging way to break the ice and encourage interaction among a diverse group of attendees, which included founders like Vanessa from VDL Designs. That is where Neegma stepped in to provide a seamless, interactive gaming experience that elevated the entire event.
 
-Great food brings people together, but shared laughter creates genuine connection. [Table by KO](https://www.instagram.com/tryneegma/) is a private, Birmingham-based community built around good food and thoughtful people. Their motto, "Come for the food. Stay for the connection," aligned perfectly with our mission when they hosted their Saturday networking event on June 13. The organisers wanted an engaging way to break the ice and encourage interaction among a diverse group of attendees, which included founders like Vanessa from VDL Designs. That is where Neegma stepped in to provide a seamless, interactive gaming experience that elevated the entire event.
-
-<!-- ![PLACEHOLDER: Wide shot of guests arriving and grabbing food at the Table by KO networking event](/images/table-by-ko-birmingham-event-recap/01-arrivals.jpg) -->
+![Wide shot at the beginning of the event](https://res.cloudinary.com/dzpntisxj/image/upload/v1783757747/Neegma/events/table_by_ko_wide-shot_2_pqu2hk.jpg)
 
 ## Breaking the Ice with Song Association
 
@@ -35,9 +34,7 @@ After a quick introduction by the host, guests grabbed their food and divided in
 
 The first activity of the day was [Song Association](https://tryneegma.com/game/song-association). In this fast-paced game, players receive a word and must quickly sing a song containing it. We went around the room from team to team. If a group failed to sing a valid song, the turn passed, and bonus points were up for grabs.
 
-One of the things that made this round land so well is that Song Association is fully customisable. Neegma automatically supplies fun prompts, but hosts can also swap in their own words straight from the [Neegma Playground](https://tryneegma.com/help-center/how-the-playground-works). That means the same game can be tuned for a wedding, a work offsite, or a community lunch like this one, without changing anything about how it plays.
-
-<!-- ![PLACEHOLDER: A team on their feet mid-song during Song Association](/images/table-by-ko-birmingham-event-recap/02-song-association.jpg) -->
+One of the things that made this round land so well is that Song Association is fully customisable. Neegma automatically supplies fun word prompts, but hosts can also swap in their own words straight from the [Neegma Playground](https://tryneegma.com/help-center/how-the-playground-works). That means the same game can be tuned for a wedding, a work offsite, or a community lunch like this one, without changing anything about how it plays.
 
 The live energy was incredible, fuelled by our consensus scoring system. Because everyone was interacting in the same room, the crowd instantly agreed on whether a song was correct or not, and the host logged the results directly into the platform. With words like "laughter," "ice cream," "try," and "cry," the room quickly filled with singing and friendly debate. After four exciting rounds, Team Thanos secured the win by strategically accumulating bonus points.
 
@@ -59,16 +56,12 @@ This sparked hilarious discussion and intense deduction as teams voted on who th
 
 What makes Find the Mole such a strong fit for networking events is that it forces conversation. To survive a round, people who met five minutes ago have to read each other, bluff, and defend themselves out loud. That is exactly the kind of interaction a room of strangers needs to warm up.
 
+![Find the mole results at the end of the game](https://res.cloudinary.com/dzpntisxj/image/upload/v1783757365/Neegma/events/table_by_ko_ftm_leaderboard_ascv05.jpg)
+
 ## A Night of Lasting Memories
 
 By the time the games concluded, the atmosphere had completely transformed. The guests had built a solid foundation of connection, making it easy to spend the rest of the evening dancing and enjoying the music together. Neegma successfully bridged the gap between a standard networking lunch and a truly memorable social experience.
 
-<!-- ![PLACEHOLDER: Group photo of the teams together at the end of the Table by KO event](/images/table-by-ko-birmingham-event-recap/04-group.jpg) -->
+To see the energy for yourself, check out the recap video on [our Instagram](https://www.instagram.com/reel/DZxmhaatmyS/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==), as well as the [photos](https://www.instagram.com/p/DaN9G9oCBTU/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==) on Table by KO's Instagram page.
 
-To see the energy for yourself, check out the recap video on [our Instagram](https://www.instagram.com/tryneegma/), as well as the highlights on the Table by KO Instagram page.
-
-<!-- LINK: replace with the direct Table by KO Instagram post/reel URL when available. -->
-
----
-
-*If you are planning a community gathering or workshop, discover how to create your own high-energy experiences on our [Events use case page](https://tryneegma.com/use-cases/events) and [Facilitators use case page](https://tryneegma.com/use-cases/facilitators). Ready to try it now? [Browse the game library](https://tryneegma.com/games) or [start hosting on Neegma](https://tryneegma.com/neeg-host/create).*
+_If you are planning a community gathering or workshop, discover how to create your own high-energy experiences on our [Events use case page](https://tryneegma.com/use-cases/events) and [Facilitators use case page](https://tryneegma.com/use-cases/facilitators). Ready to try it now? [Browse the game library](https://tryneegma.com/games) or [start hosting on Neegma](https://tryneegma.com/neeg-host/create)._
