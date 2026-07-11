@@ -12,6 +12,12 @@ export const metadata: Metadata = {
     },
     description:
         "Event recaps, host playbooks, and behind-the-scenes notes from the Neegma team. Real social games for any gathering, one link, no downloads, everyone is in.",
+    alternates: {
+        canonical: "/",
+        types: {
+            "application/rss+xml": [{ url: "/rss.xml", title: "Neegma Blog" }],
+        },
+    },
     keywords: [
         "Neegma blog",
         "social games",

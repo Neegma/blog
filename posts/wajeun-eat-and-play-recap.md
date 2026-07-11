@@ -36,9 +36,9 @@ The event started around 12:00, with people arriving gradually and settling into
 
 ## Starting with Stating the Obvious
 
-We began with a light creative icebreaker called Stating the Obvious. The idea was simple: everyone had to write something poetic about an obvious feature of their appearance or something noticeable about them. It immediately changed the mood of the room, because people had to look at themselves and each other a little differently, not just literally, but playfully.
+We began with a light creative icebreaker called [Stating the Obvious](https://tryneegma.com/games). The idea was simple: everyone had to write something poetic about an obvious feature of their appearance or something noticeable about them. It immediately changed the mood of the room, because people had to look at themselves and each other a little differently, not just literally, but playfully.
 
-After that, we moved into the first digital game on Neegma: Find the Mole. Everyone joined on their phones by scanning the QR code, and the room quickly shifted from calm curiosity to full attention. In each round, everyone saw the category, but one person did not know the actual word, so the group had to talk, listen carefully, and figure out who the mole was.
+After that, we moved into the first digital game on Neegma: [Find the Mole](https://tryneegma.com/game/find-the-mole). Everyone joined on their phones by scanning the QR code, and the room quickly shifted from calm curiosity to full attention. In each round, everyone saw the category, but one person did not know the actual word, so the group had to talk, listen carefully, and figure out who the mole was.
 
 <!-- ![PLACEHOLDER: Guests scanning the QR code on the big screen to join Find the Mole](/images/wajeun-eat-and-play/02-qr-join.jpg) -->
 
@@ -51,6 +51,8 @@ All this was happening while food was being served, which gave the whole event a
 <!-- ![PLACEHOLDER: Turkey pepper soup being served while the game continues on screen](/images/wajeun-eat-and-play/03-food-and-game.jpg) -->
 
 From there, we switched into a singing game and divided people into teams. Each group picked its own name, which immediately added personality and humor before the game had even begun. Then the challenge started: based on a letter or word from the host, each team had to sing songs that matched, and very quickly the room filled with laughter, shouting, confidence, hesitation, and those hilarious moments where someone knew a song but could not quite start it in time.
+
+That singing round was [Song Association](https://tryneegma.com/game/song-association). At the time we ran it by hand, calling out words and tracking teams ourselves, because it was not a Neegma game yet. It is now, so hosts can run the exact same energy straight from the platform, with automatic prompts, team scoring, and the option to drop in your own custom words.
 
 By then, people were fully warmed up. The second meal, bole and fish, was served, and the room had that really nice kind of buzz that happens when people have already shared a few laughs together. You could feel that it was no longer a room full of separate attendees. It was becoming a shared experience.
 
@@ -70,7 +72,7 @@ Those little details made the game feel personal, observant, and full of charact
 
 ## Wajeun's custom game rounds
 
-By this point, the room was ready for the custom game rounds. One of the most exciting parts of the collaboration was that Wajeun had created their own custom questions ahead of the event using Neegma's playground, so the games felt even more tied to the day itself. We had a full run of dataset-style games: Unscramble, Missing Letter, and Odd One Out.
+By this point, the room was ready for the custom game rounds. One of the most exciting parts of the collaboration was that Wajeun had created their own custom questions ahead of the event using [Neegma's Playground](https://tryneegma.com/help-center/how-the-playground-works), so the games felt even more tied to the day itself. We had a full run of dataset-style games: [Unscramble](https://tryneegma.com/game/unscramble), [Missing Letter](https://tryneegma.com/game/missing-letter), and [Odd One Out](https://tryneegma.com/game/odd-one-out).
 
 For each game, people scanned the QR code again, joined the session, and played directly from their phones. We started with Wajeun's custom question sets, then moved into Neegma's own question pool. The pacing helped a lot: quick rounds, 15-second countdowns, fast scoring, and live leaderboards kept the momentum high and made every question feel like it mattered.
 

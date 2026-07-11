@@ -62,8 +62,35 @@ export default async function PostPage({ params }: Props) {
 
     const wordCount = post.content ? post.content.split(/\s+/).filter(Boolean).length : undefined;
 
+    const siteUrl = "https://blog.tryneegma.com";
+    const absoluteCover = post.coverImage.startsWith("http")
+        ? post.coverImage
+        : `${siteUrl}${post.coverImage}`;
+
+    const jsonLd = {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        headline: post.title,
+        description: post.description,
+        image: [absoluteCover],
+        datePublished: post.date || undefined,
+        dateModified: post.date || undefined,
+        author: { "@type": "Organization", name: post.author || "Neegma" },
+        publisher: {
+            "@type": "Organization",
+            name: "Neegma",
+            logo: { "@type": "ImageObject", url: "https://tryneegma.com/logo.png" },
+        },
+        mainEntityOfPage: { "@type": "WebPage", "@id": `${siteUrl}/${post.slug}` },
+        keywords: post.keywords.length ? post.keywords.join(", ") : undefined,
+    };
+
     return (
         <>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+            />
             <PostViewTracker
                 post_title={post.title}
                 post_slug={post.slug}

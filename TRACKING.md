@@ -68,6 +68,13 @@ name **exactly** (GA is case-sensitive):
 | `currency`          | Event | `GBP`, `USD`, ...                                                                   | For revenue formatting                                                       |
 | `value`             | Event | number                                                                              | Monetary value (also goes into GA4 revenue automatically when on `purchase`) |
 | `transaction_id`    | Event | string                                                                              | Required by GA4 for `purchase`                                               |
+| `sound_enabled`     | Event | `true`, `false`                                                                     | Audio preference at game start, also payload of `toggle_sound`               |
+| `surface`           | Event | `host`, `channel`, `completion`, `other`                                            | Where the user took an action (e.g. which screen toggled sound)              |
+| `custom_game_id`    | Event | UUID                                                                                | Specific custom game; ties create → preview → play funnel                    |
+| `category`          | Event | `custom`, `trivia`, ...                                                             | Custom-game category (free-form taxonomy)                                    |
+| `question_count`    | Event | integer                                                                             | How many questions a custom game has                                         |
+| `import_method`     | Event | `manual`, `csv`, `mixed`                                                            | How the host built their custom game                                         |
+| `source`            | Event | `playground_list`, `custom_game_detail`, `host_picker`                              | Where a preview was opened from                                              |
 | `user_id`           | User  | UUID                                                                                | Cross-session same-user stitching                                            |
 
 ### 2.3 Key Events (formerly Conversions)
@@ -108,9 +115,13 @@ user is resolved.
 | `blog_view`          | blog    | Post page mounts (`PostViewTracker`)                                                                 | `post_title`, `post_slug`, `author`, `category`, `tags`, `word_count` |
 | `scroll_depth`       | blog    | User crosses 25/50/75/100 percent of a post                                                          | `depth_percentage`, `page_path`, `post_slug`                          |
 | `use_case_view`      | app     | Use-case landing page mounts                                                                         | `page_name`                                                           |
+| `game_page_view`     | app     | Public game detail page mounts (`GameHero`)                                                          | `game_display_name`, `game_title`                                     |
+| `features_view`      | app     | Features page mounts (`FeaturesContent`)                                                             | `page_name`                                                           |
+| `compare_view`       | app     | Compare landing page mounts (`CompareContent`)                                                       | `page_name`                                                           |
 | `view_pricing`       | app     | Pricing page mounts                                                                                  | `currency`, `source_page`                                             |
-| `help_article_view`  | app     | Help article opens                                                                                   | `article_title`, `slug`                                               |
-| `help_center_search` | app     | Help center search submitted                                                                         | `search_term`, `results_count`                                        |
+| `help_center_view`   | app     | Help center index mounts (`HelpCenterContent`)                                                        | `page_name`                                                           |
+| `help_article_view`  | app     | Help article opens (`ArticleDetail`)                                                                 | `article_title`, `slug`                                               |
+| `help_center_search` | app     | Help center search submitted (debounced)                                                             | `search_term`, `results_count`                                        |
 
 ### 3.2 Lead-gen (cross-domain bridge)
 
@@ -136,15 +147,27 @@ user is resolved.
 
 ### 3.4 Host / game
 
-| Event                    | Surface | Fires when                                                             | Parameters                                                                                                                   |
-| ------------------------ | ------- | ---------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| `create_game_session`    | app     | Host creates a neeg-host session (`useFormSubmission`)                 | `title`, `is_guest`, `user_role` (`host`, `guest_host`)                                                                      |
-| `join_game`              | app     | Player successfully joins via the channel (`ChannelJoin`)              | `neeg_host_id`, `method` (`qr`, `code`, `link`, `rejoin`), `device_type`                                                     |
-| `start_game`             | app     | `useCreateNeegHostAttempt` resolves in `NeegHostGameSelect`            | `game_type`, `neeg_host_id`, `player_count`, `team_mode_enabled`, `num_teams?`, `total_rounds?`, `custom_game`, `attempt_id` |
-| `complete_game`          | app     | `NeegHostCompletion` mounts                                            | `game_type`, `neeg_host_id`, `player_count`, `mode`, `rounds_played`                                                         |
-| `play_again`             | app     | "Play Again" clicked in completion screen                              | `game_type`, `neeg_host_id`                                                                                                  |
-| `view_leaderboard`       | app     | Leaderboard opened in session or at completion                         | `game_type?`, `neeg_host_id?`, `scope` (`round`, `session`, `final`)                                                         |
-| `game_session_abandoned` | app     | (Reserved) Fire from `beforeunload` if attempt started but no complete | `game_type`, `reason`, `neeg_host_id`                                                                                        |
+| Event                    | Surface | Fires when                                                             | Parameters                                                                                                                                                       |
+| ------------------------ | ------- | ---------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `create_game_session`    | app     | Host creates a neeg-host session (`useFormSubmission`)                 | `title`, `is_guest`, `user_role` (`host`, `guest_host`)                                                                                                          |
+| `join_game`              | app     | Player successfully joins via the channel (`ChannelJoin`)              | `neeg_host_id`, `method` (`qr`, `code`, `link`, `rejoin`), `device_type`. **`method: "rejoin"` is the rejoin signal — no separate `rejoin` event.**              |
+| `start_game`             | app     | `useCreateNeegHostAttempt` resolves in `NeegHostGameSelect`            | `game_type`, `neeg_host_id`, `player_count`, `team_mode_enabled`, `num_teams?`, `total_rounds?`, `custom_game`, `custom_game_id?`, `sound_enabled`, `attempt_id` |
+| `complete_game`          | app     | `NeegHostCompletion` mounts                                            | `game_type`, `neeg_host_id`, `player_count`, `mode`, `rounds_played`                                                                                             |
+| `play_again`             | app     | "Play Again" clicked in completion screen                              | `game_type`, `neeg_host_id`                                                                                                                                      |
+| `view_leaderboard`       | app     | Leaderboard opened in session or at completion                         | `game_type?`, `neeg_host_id?`, `scope` (`round`, `session`, `final`)                                                                                             |
+| `reset_players`          | app     | Host confirms "Reset Players" in `HostStartActions`                    | `neeg_host_id`, `player_count` (count before reset)                                                                                                              |
+| `toggle_sound`           | app     | User clicks the sound toggle (`SoundToggle`)                           | `sound_enabled` (new state after click), `surface` (`host`, `channel`, `completion`, `other`), `neeg_host_id?`                                                   |
+| `game_session_abandoned` | app     | (Reserved) Fire from `beforeunload` if attempt started but no complete | `game_type`, `reason`, `neeg_host_id`                                                                                                                            |
+
+### 3.4a Custom games lifecycle
+
+These three events form the custom-game funnel (create → preview → play). Every custom game also fires `start_game` with `custom_game: true` for the regular host-game funnel.
+
+| Event                 | Surface | Fires when                                                                                                   | Parameters                                                                   |
+| --------------------- | ------- | ------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------- |
+| `create_custom_game`  | app     | `pages/dashboard/playground/create.tsx` finishes creating + adding questions                                 | `custom_game_id`, `game_type`, `category`, `question_count`, `import_method` |
+| `preview_custom_game` | app     | User clicks "Preview" on a custom game (either playground list or detail page)                               | `custom_game_id`, `game_type`, `question_count?`, `source`                   |
+| `play_custom_game`    | app     | Host actually starts a session with a custom-game source (`NeegHostGameSelect.handleSourceSelect` → `start`) | `custom_game_id`, `game_type`, `neeg_host_id`, `question_count?`             |
 
 ### 3.5 Monetization
 
@@ -223,6 +246,20 @@ for a top-of-funnel paid conversion rate. Drop-off between step 3 and step
 4 is where Lemon Squeezy's hosted checkout is bleeding, which we cannot
 instrument client-side. Add `checkout_abandoned` as a step-4 alternate to
 see explicit cancels.
+
+### 4.4a Custom-game lifecycle funnel
+
+Goal: of hosts who build a custom question set, how many actually use it.
+
+1. `create_custom_game`
+2. `preview_custom_game` (same `custom_game_id`)
+3. `play_custom_game` (same `custom_game_id`)
+
+Closed funnel, scoped to `custom_game_id` so each game's lifecycle is its own
+row when you break down by that dimension. Breakdown by `import_method`
+(`manual` vs `csv` vs `mixed`) to see which onboarding path produces games
+that actually get played. Skipping step 2 is common, treat it as informational
+rather than blocking.
 
 ### 4.5 Content engagement to subscriber
 

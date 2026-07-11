@@ -16,13 +16,23 @@ const socialLinks = [
 ];
 
 const footerLinks = {
-    product: [
+    "use cases": [
+        { label: "For Teams", href: "https://tryneegma.com/use-cases/teams" },
+        { label: "For Facilitators", href: "https://tryneegma.com/use-cases/facilitators" },
+        { label: "For Events", href: "https://tryneegma.com/use-cases/events" },
+        { label: "For Parties", href: "https://tryneegma.com/use-cases/parties" },
+        { label: "For Creators", href: "https://tryneegma.com/use-cases/creators" },
+    ],
+    company: [
+        { label: "Blog", href: "/" },
         { label: "Features", href: "https://tryneegma.com/features" },
-        { label: "Pricing", href: "https://tryneegma.com/pricing" },
+        { label: "Events", href: "https://tryneegma.com/events" },
     ],
     support: [
+        { label: "Help Center", href: "https://tryneegma.com/help-center" },
+        { label: "Pacing Modes", href: "https://tryneegma.com/help/pacing" },
         { label: "Contact", href: "https://tryneegma.com/contact" },
-        { label: "FAQ", href: "https://tryneegma.com/pricing#faq" },
+        { label: "Frequently Asked Questions", href: "https://tryneegma.com/pricing#faq" },
     ],
 };
 
