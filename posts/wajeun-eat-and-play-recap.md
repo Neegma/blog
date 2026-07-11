@@ -52,6 +52,8 @@ All this was happening while food was being served, which gave the whole event a
 
 From there, we switched into a singing game and divided people into teams. Each group picked its own name, which immediately added personality and humor before the game had even begun. Then the challenge started: based on a letter or word from the host, each team had to sing songs that matched, and very quickly the room filled with laughter, shouting, confidence, hesitation, and those hilarious moments where someone knew a song but could not quite start it in time.
 
+That singing round was [Song Association](https://tryneegma.com/game/song-association). At the time we ran it by hand, calling out words and tracking teams ourselves, because it was not a Neegma game yet. It is now, so hosts can run the exact same energy straight from the platform, with automatic prompts, team scoring, and the option to drop in your own custom words.
+
 By then, people were fully warmed up. The second meal, bole and fish, was served, and the room had that really nice kind of buzz that happens when people have already shared a few laughs together. You could feel that it was no longer a room full of separate attendees. It was becoming a shared experience.
 
 ## The Stating the Obvious twist
