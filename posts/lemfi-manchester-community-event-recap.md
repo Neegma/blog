@@ -32,7 +32,7 @@ On March 28th, the LemFi team hosted a community social event in Manchester, bri
 
 ## Tailoring the Games to the Crowd
 
-A generic trivia game would not cut it for a localised brand event. We wanted the games to feel deeply relevant to the people in the room. Using the [Neegma Playground](https://tryneegma.com/help-center/how-the-playground-works), we created custom question decks for [Unscramble](https://tryneegma.com/games) and [Missing Letter](https://tryneegma.com/games) ahead of the event.
+A generic trivia game would not cut it for a localised brand event. We wanted the games to feel deeply relevant to the people in the room. Using the [Neegma Playground](https://tryneegma.com/help-center/how-the-playground-works), we created custom question decks for [Unscramble](https://tryneegma.com/game/unscramble) and [Missing Letter](https://tryneegma.com/game/missing-letter) ahead of the event.
 
 The words were not random. They were a mix of financial tech terms, LemFi product features like "Zero Fees" and "Transactions," and cultural touchstones spanning Nigeria, Manchester, and the UK, including references like "Piccadilly." This meant the crowd was not just playing a game. They were playing their game, one that reflected their world.
 

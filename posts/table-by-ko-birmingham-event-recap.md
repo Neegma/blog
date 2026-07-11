@@ -33,7 +33,7 @@ Great food brings people together, but shared laughter creates genuine connectio
 
 After a quick introduction by the host, guests grabbed their food and divided into four groups: the Jolly Team, Team Thanos, Team 3, and the Strike Team. To get started, team leads simply scanned a QR code from the host's phone to join the live Neegma session. There were no apps to download, and everyone was ready to play in seconds. If you want to see exactly how quick that setup is, we walk through it in [How to create a session](https://tryneegma.com/help-center/how-to-create-a-session).
 
-The first activity of the day was [Song Association](https://tryneegma.com/games). In this fast-paced game, players receive a word and must quickly sing a song containing it. We went around the room from team to team. If a group failed to sing a valid song, the turn passed, and bonus points were up for grabs.
+The first activity of the day was [Song Association](https://tryneegma.com/game/song-association). In this fast-paced game, players receive a word and must quickly sing a song containing it. We went around the room from team to team. If a group failed to sing a valid song, the turn passed, and bonus points were up for grabs.
 
 One of the things that made this round land so well is that Song Association is fully customisable. Neegma automatically supplies fun prompts, but hosts can also swap in their own words straight from the [Neegma Playground](https://tryneegma.com/help-center/how-the-playground-works). That means the same game can be tuned for a wedding, a work offsite, or a community lunch like this one, without changing anything about how it plays.
 
@@ -51,7 +51,7 @@ One of the best technical advantages of using Neegma for live events is session 
 
 ## Uncovering Secrets in Find the Mole
 
-Once everyone gathered on the terrace, we introduced the second game: [Find the Mole](https://tryneegma.com/games). This deduction game gives all but one team a secret category word, such as "yellow" for colours. The team without the word is the mole. Each group must announce a related word to prove they know the secret, without making it so obvious that the mole can blend in.
+Once everyone gathered on the terrace, we introduced the second game: [Find the Mole](https://tryneegma.com/game/find-the-mole). This deduction game gives all but one team a secret category word, such as "yellow" for colours. The team without the word is the mole. Each group must announce a related word to prove they know the secret, without making it so obvious that the mole can blend in.
 
 <!-- ![PLACEHOLDER: Teams on the terrace debating who the mole is during Find the Mole](/images/table-by-ko-birmingham-event-recap/03-find-the-mole.jpg) -->
 

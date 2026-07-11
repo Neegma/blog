@@ -31,7 +31,7 @@ The event focused on the tradeoffs between local and global KYC providers, with 
 
 ## Building a Custom FinTech Experience
 
-For Betty, the key was not just playing a game. It was playing a game that felt tailor-made for her specific audience of builders. She chose Neegma's [Unscramble](https://tryneegma.com/games) game, but she wanted questions that directly tested the attendees' industry knowledge rather than pulling from a generic word pool.
+For Betty, the key was not just playing a game. It was playing a game that felt tailor-made for her specific audience of builders. She chose Neegma's [Unscramble](https://tryneegma.com/game/unscramble) game, but she wanted questions that directly tested the attendees' industry knowledge rather than pulling from a generic word pool.
 
 Using the [Neegma Playground](https://tryneegma.com/help-center/how-the-playground-works), the setup was seamless. Betty downloaded our CSV template, used ChatGPT to generate custom FinTech-related terms, answers, and hints, and uploaded the file straight back to the platform. Within minutes, her custom "Builders in FinTech" Unscramble deck was ready. No back-and-forth, no technical setup, no waiting.
 

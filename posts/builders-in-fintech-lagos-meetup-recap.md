@@ -31,7 +31,7 @@ Virtual communities are powerful, but nothing compares to the energy of a live r
 
 ## Custom Trivia for a Custom Crowd
 
-For this event, the organisers used Neegma's [Trivia](https://tryneegma.com/games) feature, which acts as a versatile wrapper for any custom quiz game. Because the feature accepts single text, multiple-choice, or single-choice answers, it gave the team total flexibility to tailor the experience to their specific audience. Using the [Neegma Playground](https://tryneegma.com/help-center/how-the-playground-works), they crafted a custom trivia game packed with fintech-specific questions designed to challenge and entertain the professionals in the room.
+For this event, the organisers used Neegma's [Trivia](https://tryneegma.com/game/trivia) feature, which acts as a versatile wrapper for any custom quiz game. Because the feature accepts single text, multiple-choice, or single-choice answers, it gave the team total flexibility to tailor the experience to their specific audience. Using the [Neegma Playground](https://tryneegma.com/help-center/how-the-playground-works), they crafted a custom trivia game packed with fintech-specific questions designed to challenge and entertain the professionals in the room.
 
 The setup was effortless. Neegma was on the ground to provide support, but the platform's self-serve nature meant the host was in full control. When the time came to play, over 100 guests simply scanned a QR code and instantly joined the session from their phones, with no app downloads and no complex onboarding required. Running an event at this scale takes almost no extra preparation, and we cover the essentials in [Setting up a large-scale event](https://tryneegma.com/help-center/large-event-setup).
 
