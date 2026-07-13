@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { useEffect } from "react";
 
 import { GA_MEASUREMENT_ID, SITE, pageview } from "@/lib/gtag";
+import { useCookieConsent } from "@/hooks/useCookieConsent";
 
 /**
  * Mounts the GA4 base script and fires a `page_view` on every client-side
@@ -15,13 +16,14 @@ import { GA_MEASUREMENT_ID, SITE, pageview } from "@/lib/gtag";
  */
 export default function Analytics() {
     const pathname = usePathname();
+    const { analyticsGranted } = useCookieConsent();
 
     useEffect(() => {
-        if (!pathname || !GA_MEASUREMENT_ID) return;
+        if (!analyticsGranted || !pathname || !GA_MEASUREMENT_ID) return;
         pageview(pathname);
-    }, [pathname]);
+    }, [pathname, analyticsGranted]);
 
-    if (!GA_MEASUREMENT_ID) return null;
+    if (!analyticsGranted || !GA_MEASUREMENT_ID) return null;
 
     return (
         <>

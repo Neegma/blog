@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { fredoka, ibmPlexSans, notoSerif } from "@/styles/fonts";
 import Analytics from "@/components/Analytics";
+import FullStory from "@/components/FullStory";
+import CookieConsent from "@/components/CookieConsent";
 import Footer from "@/components/Footer";
 import "./globals.css";
 
@@ -60,8 +62,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         >
             <body className="min-h-screen bg-background text-foreground antialiased flex flex-col">
                 <Analytics />
+                <FullStory />
                 <div className="flex-1">{children}</div>
                 <Footer />
+                <CookieConsent />
             </body>
         </html>
     );
