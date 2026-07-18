@@ -29,3 +29,28 @@ author: name              # optional
 ```
 
 Image references inside the body should point to `/images/<post-slug>/...` and may be added later. Use the literal string `PLACEHOLDER` in alt text where the image is not yet uploaded so it is easy to grep for.
+
+## Git Commit Attribution & Branch Naming
+
+Commits in this repo are attributed to the human operator, not to Claude or Anthropic. Before committing or branching (this applies in any environment, including Claude Code on the web / cloud sessions):
+
+1. **Set the git identity for the repo** (local config only, never global):
+    ```bash
+    git config --local user.name "<Full Name>"
+    git config --local user.email "<email>"
+    ```
+    If the name/email is already evident from the conversation (the user stated it, or a prior commit in this session already set it), reuse it. **If you cannot infer it, ask the user first** via a clarifying question before making any commit — do not guess a name/email or fall back to a placeholder.
+2. **Suppress Claude's attribution trailers** by creating (or updating) `.claude/settings.local.json`:
+    ```json
+    {
+        "includeCoAuthoredBy": false,
+        "attribution": {
+            "commit": "",
+            "pr": "",
+            "sessionUrl": false
+        }
+    }
+    ```
+    `.claude/` is already gitignored, so this file never gets committed. It exists only to control this session's attribution behavior and can be safely discarded afterward.
+3. Verify no commit in this repo's history contains a `Co-Authored-By: Claude` trailer, a `Claude-Session:` link, or any other mention of Claude/Anthropic.
+4. **Ask for the branch name prefix before creating a new branch**, unless the user already gave one in this conversation (e.g. a harness-assigned branch name is not a substitute — confirm the prefix they actually want, such as `aa/`). Don't default to a `claude/`-style prefix without checking. This still applies even if a branch with a `claude/`-style name already exists locally or on the remote when the session starts — pre-existing is not pre-approved. Ask before your first commit or push on it, not only before literally running `git branch`/`git checkout -b`.

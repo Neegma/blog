@@ -150,12 +150,12 @@ export default async function PostPage({ params }: Props) {
 
                 <figure className="bg-white">
                     <div className="max-w-5xl mx-auto px-4 md:px-6 mt-8 md:mt-12">
-                        <div className="relative aspect-video w-full rounded-2xl overflow-hidden border border-navy-900/10 bg-neegma-gradient">
+                        <div className="relative w-full h-[280px] sm:h-[400px] md:h-[560px] rounded-2xl overflow-hidden border border-navy-900/10 bg-neegma-gradient">
                             <Image
                                 src={post.coverImage}
                                 alt={post.coverImageAlt}
                                 fill
-                                className="object-cover"
+                                className="object-contain"
                                 sizes="(max-width: 1024px) 100vw, 1024px"
                                 priority
                             />
