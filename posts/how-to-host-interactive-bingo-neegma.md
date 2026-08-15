@@ -15,13 +15,12 @@ tags:
     - Bingo
     - Party Games
 author: "Neegma Team"
+gamePreview: "bingo"
 ---
 
 Bingo is one of the most universally understood games in the world. But paper cards, marker pens, and a manual number cage feel dated fast, especially when you're hosting a lively party or a corporate mixer where half the room is meeting for the first time.
 
-[Neegma Bingo](https://tryneegma.com/game/bingo) reimagines the classic format as a seamless, browser based game built for the way people actually gather now.
-
-<!-- ![PLACEHOLDER: A player's phone showing a live Neegma Bingo card mid-game, with several numbers already marked](/images/how-to-host-interactive-bingo-neegma/01-bingo-card-preview.jpg) -->
+[Neegma Bingo](https://tryneegma.com/game/bingo) reimagines the classic format as a seamless, browser based game built for the way people actually gather now. Here's the exact screen a player is looking at mid-round.
 
 ## How Neegma Bingo works
 

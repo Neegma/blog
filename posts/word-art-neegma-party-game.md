@@ -15,13 +15,12 @@ tags:
     - Word Art
     - Party Games
 author: "Neegma Team"
+gamePreview: "word-art"
 ---
 
 Most party word games test how fast you can type. But the games that create the biggest laughs around a table, or in a crowded lounge, are the ones where people have to think on their feet, shout their answer out loud, and defend it to a room full of friends who get to vote on whether it counts.
 
-That's the whole premise of [Word Art](https://tryneegma.com/game/word-art), one of the newest games in the Neegma library.
-
-<!-- ![PLACEHOLDER: Word Art host screen showing a revealed prompt and whose turn it is, mid-countdown](/images/word-art-neegma-party-game/01-word-art-preview.jpg) -->
+That's the whole premise of [Word Art](https://tryneegma.com/game/word-art), one of the newest games in the Neegma library. Here's the exact screen a player sees mid-round.
 
 ## How Word Art works
 

@@ -14,6 +14,8 @@ export interface PostMeta {
     keywords: string[];
     tags: string[];
     author: string | null;
+    /** Slug into GAME_PREVIEWS (lib/gamePreviews.ts); renders the real game hero widget instead of the cover image. */
+    gamePreview: string | null;
 }
 
 export interface PostWithContent extends PostMeta {
@@ -45,6 +47,7 @@ function normalise(data: Record<string, unknown>, fallbackSlug: string): PostMet
     const keywords = toArray(data.keywords);
     const tags = toArray(data.tags);
     const author = data.author ? String(data.author) : null;
+    const gamePreview = data.gamePreview ? String(data.gamePreview) : null;
 
     return {
         slug,
@@ -57,6 +60,7 @@ function normalise(data: Record<string, unknown>, fallbackSlug: string): PostMet
         keywords,
         tags,
         author,
+        gamePreview,
     };
 }
 
