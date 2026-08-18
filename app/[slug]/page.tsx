@@ -130,7 +130,7 @@ export default async function PostPage({ params }: Props) {
                                 })}
                             </div>
                         ) : null}
-                        <h1 className="font-fredoka text-3xl md:text-5xl font-bold text-navy-900 leading-tight tracking-tight">
+                        <h1 className="font-fredoka text-3xl md:text-5xl font-semibold text-navy-900 leading-tight tracking-tight">
                             {post.title}
                         </h1>
                         {post.description ? (
