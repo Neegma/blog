@@ -4,6 +4,10 @@ description: "Already selling printable trivia packs, bingo cards, or party game
 date: "2026-08-10"
 slug: "sell-printable-party-games-etsy-canva"
 excerpt: "You've already written the questions and designed the cards. The part still stuck in 2015 is the printer, the scissors, and someone reading an answer key out loud."
+coverImage: "https://res.cloudinary.com/dzpntisxj/image/upload/v1787061280/Neegma/blogposts/etsy_1_aeol2s.jpg"
+coverImageAlt: "A child playing with a puzzle on a table"
+coverImageCredit: "Courtney Kirkland"
+coverImageCreditUrl: "https://unsplash.com/photos/a-child-is-playing-with-a-puzzle-on-a-table-TPSPwlWaZF4"
 keywords:
     - sell printable party games
     - printable games on Etsy
