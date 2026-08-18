@@ -1,6 +1,6 @@
 ---
 title: "How to Launch a Live Game Show in Seconds with Neegma Templates"
-description: "Discover how Neegma's ready-to-play game templates help hosts, managers, and event facilitators run polished game sessions with zero prep."
+description: "Discover how Neegma's ready-to-play session templates help hosts, managers, and event facilitators run a whole polished game night with zero prep."
 date: "2026-08-08"
 slug: "how-to-use-neegma-templates"
 excerpt: "The invite's gone out for tomorrow and you don't have three hours to write trivia questions. Here's the shortcut that still looks like you planned it for weeks."
@@ -25,13 +25,13 @@ Instead of starting from a blank screen, templates give you a curated, structure
 
 ## What is a Neegma template?
 
-A template is a session you've already put together (or someone else has), ready to open and host immediately. Each one bundles together:
+It's easy to hear "template" and picture a single reusable question deck. That's not what this is. A Neegma template is a whole **session**, already built: which games play, in what order, how many rounds each gets, and how the pacing moves from one to the next. Open it and you're not starting a game, you're starting the night. Each one bundles together:
 
-- **Curated games.** Formats like Unscramble, Taboo, Missing Letter, Bingo, Find the Mole, or Two Truths & a Lie, picked to match the vibe of the event.
-- **Content that's actually thought through.** Prompts, categories, and question decks suited to the group.
-- **Pacing and timing already set.** Round counts and timers configured so you're not guessing how long anything will take.
+- **A running order, not just a game list.** Formats like Unscramble, Taboo, Missing Letter, Bingo, Find the Mole, or Two Truths & a Lie, sequenced to match the vibe of the event from the first round to the last.
+- **Content that's actually thought through.** Prompts, categories, and question decks suited to the group, for every game in the session, not just one.
+- **Pacing and timing already set.** Round counts and timers configured across the whole run of show, so you're not guessing how long any of it will take.
 
-Guests still join the exact same way, no matter which template you pick: scan a QR code or tap a link on their phone, no app download, no account.
+That's where the real value sits. Anyone can hand you a trivia deck. A template hands you the entire evening, pre-sequenced, so the only decision left is when to hit start. Guests still join the exact same way, no matter which template you pick: scan a QR code or tap a link on their phone, no app download, no account.
 
 ## Templates built for real moments
 
@@ -59,6 +59,12 @@ Templates give you instant momentum, but you're never locked into someone else's
 
 Every plan comes with its own allowance for saved templates, from 5 on the Free plan up to 25 on Pro, so once you've built something worth reusing, it's there whenever you need it again.
 
-Whether you choose a ready-to-run template from the library or build your own set in the Playground, Neegma takes care of the mechanics, the timer, the scoring, and the live scoreboard, so you can focus on actually hosting.
+## Built a session worth reusing? Sell it too
 
-[Explore ready-made game templates](https://tryneegma.com/templates) · [Build a custom game in the Playground](https://tryneegma.com/features)
+Once you've put together a running order that actually works, whether that's from scratch in the Playground or by customising something from the library, you don't have to keep it to yourself. Through the [Neegma Partner Program](https://tryneegma.com/use-cases/sellers), approved partners can package their own sessions as templates and sell them to other hosts, with their own branding on the storefront.
+
+If you're already the person your friends, your company, or your community calls on to run the games, whether that's parties, offsites, or events, that's exactly who this is built for. You're doing the work already. This just means you stop doing it for free.
+
+Whether you choose a ready-to-run template from the library, build your own set in the Playground, or list one you've built for other hosts to buy, Neegma takes care of the mechanics, the timer, the scoring, and the live scoreboard, so you can focus on actually hosting.
+
+[Explore ready-made game templates](https://tryneegma.com/templates) · [Build a custom game in the Playground](https://tryneegma.com/features) · [Learn about becoming a Partner](https://tryneegma.com/use-cases/sellers)

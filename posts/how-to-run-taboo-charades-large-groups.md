@@ -55,6 +55,17 @@ In [Taboo on Neegma](https://tryneegma.com/game/taboo), one player from the acti
 - Same as Taboo, if the scheduled performer would rather not, anyone else on the team can step up and take the turn instead.
 - The moment a correct guess lands, the host confirms it and the next round cues up straight away.
 
+## Step 5: Build your own themed deck
+
+The words don't have to come from a generic pool. Both games pull from the [Neegma Playground](https://tryneegma.com/features), so you can write or upload a deck built for the exact room you're standing in front of. A few themes that work well at scale:
+
+- **Wedding Charades:** the couple's story, in-jokes, and moments from the day, acted out by the guests who actually lived them.
+- **Birthday Charades:** the birthday person's most quoted phrases, favourite films, and the running jokes from the group chat.
+- **Music Legends Charades:** artists, album titles, and iconic performances for a room that knows its music.
+- **Football Charades:** clubs, players, and famous moments for a crowd that would honestly rather be watching the match.
+
+Upload a deck by CSV in one go or type it straight in, and it's saved as a [template](https://tryneegma.com/templates) you can reuse next time without rebuilding it from scratch. If you're the person who ends up building decks like this for other people's events too, that's exactly the kind of content the [Partner Program](https://tryneegma.com/use-cases/sellers) is built to help you sell.
+
 ## Why this format keeps 100 people engaged
 
 - **Zero downtime.** The live timer and automatic round rotation cut out the pauses between rounds that usually kill momentum.
