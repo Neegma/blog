@@ -5,22 +5,22 @@ import type { Components } from "react-markdown";
 
 const components: Components = {
     h1: ({ children }) => (
-        <h1 className="font-fredoka text-3xl md:text-4xl font-bold text-navy-900 mt-12 mb-6 leading-tight">
+        <h1 className="font-fredoka text-3xl md:text-4xl font-semibold text-navy-900 mt-12 mb-6 leading-tight">
             {children}
         </h1>
     ),
     h2: ({ children }) => (
-        <h2 className="font-fredoka text-2xl md:text-3xl font-bold text-navy-900 mt-12 mb-5 leading-tight">
+        <h2 className="font-fredoka text-2xl md:text-3xl font-semibold text-navy-900 mt-12 mb-5 leading-tight">
             {children}
         </h2>
     ),
     h3: ({ children }) => (
-        <h3 className="font-fredoka text-xl md:text-2xl font-bold text-navy-900 mt-10 mb-4 leading-tight">
+        <h3 className="font-fredoka text-xl md:text-2xl font-medium text-navy-900 mt-10 mb-4 leading-tight">
             {children}
         </h3>
     ),
     h4: ({ children }) => (
-        <h4 className="font-fredoka text-lg md:text-xl font-semibold text-navy-900 mt-8 mb-3">
+        <h4 className="font-fredoka text-lg md:text-xl font-medium text-navy-900 mt-8 mb-3">
             {children}
         </h4>
     ),
@@ -56,9 +56,7 @@ const components: Components = {
         </blockquote>
     ),
     hr: () => <hr className="border-navy-900/10 my-10" />,
-    strong: ({ children }) => (
-        <strong className="font-semibold text-navy-900">{children}</strong>
-    ),
+    strong: ({ children }) => <strong className="font-semibold text-navy-900">{children}</strong>,
     em: ({ children }) => <em className="italic">{children}</em>,
     img: ({ src, alt }) => (
         <figure className="my-8">
@@ -81,6 +79,25 @@ const components: Components = {
         <code className="font-mono text-sm bg-navy-900/6 text-navy-900 px-1.5 py-0.5 rounded">
             {children}
         </code>
+    ),
+    table: ({ children }) => (
+        <div className="my-7 overflow-x-auto rounded-xl border border-navy-900/10">
+            <table className="w-full border-collapse text-left">{children}</table>
+        </div>
+    ),
+    thead: ({ children }) => <thead className="bg-navy-900/[0.04]">{children}</thead>,
+    tr: ({ children }) => (
+        <tr className="border-b border-navy-900/10 last:border-b-0">{children}</tr>
+    ),
+    th: ({ children }) => (
+        <th className="px-4 py-3 font-fredoka text-sm font-bold text-navy-900 align-top">
+            {children}
+        </th>
+    ),
+    td: ({ children }) => (
+        <td className="px-4 py-3 font-serif text-[15px] md:text-base leading-relaxed text-navy-900/85 align-top">
+            {children}
+        </td>
     ),
 };
 

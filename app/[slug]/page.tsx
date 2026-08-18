@@ -3,18 +3,15 @@ import { ArrowRightIcon } from "@phosphor-icons/react/dist/ssr";
 import Image from "next/image";
 
 import Breadcrumb from "@/components/Breadcrumb";
+import GamePreviewCard from "@/components/GamePreviewCard";
 import Header from "@/components/Header";
 import PostContent from "@/components/PostContent";
 import PostNav from "@/components/PostNav";
 import PostViewTracker from "@/components/PostViewTracker";
 import ScrollDepthTracker from "@/components/ScrollDepthTracker";
 import TrackedLink from "@/components/TrackedLink";
-import {
-    formatPostDate,
-    getAdjacentPosts,
-    getAllPostSlugs,
-    getPostBySlug,
-} from "@/lib/posts";
+import { GAME_PREVIEWS } from "@/lib/gamePreviews";
+import { formatPostDate, getAdjacentPosts, getAllPostSlugs, getPostBySlug } from "@/lib/posts";
 
 import type { Metadata } from "next";
 
@@ -40,7 +37,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
             description: post.description,
             type: "article",
             publishedTime: post.date || undefined,
-            images: post.coverImage ? [{ url: post.coverImage, alt: post.coverImageAlt }] : undefined,
+            images: post.coverImage
+                ? [{ url: post.coverImage, alt: post.coverImageAlt }]
+                : undefined,
         },
         twitter: {
             card: "summary_large_image",
@@ -59,6 +58,7 @@ export default async function PostPage({ params }: Props) {
     if (!post) notFound();
 
     const { previous, next } = getAdjacentPosts(slug);
+    const gamePreview = post.gamePreview ? GAME_PREVIEWS[post.gamePreview] : undefined;
 
     const wordCount = post.content ? post.content.split(/\s+/).filter(Boolean).length : undefined;
 
@@ -130,7 +130,7 @@ export default async function PostPage({ params }: Props) {
                                 })}
                             </div>
                         ) : null}
-                        <h1 className="font-fredoka text-3xl md:text-5xl font-bold text-navy-900 leading-tight tracking-tight">
+                        <h1 className="font-fredoka text-3xl md:text-5xl font-semibold text-navy-900 leading-tight tracking-tight">
                             {post.title}
                         </h1>
                         {post.description ? (
@@ -148,20 +148,52 @@ export default async function PostPage({ params }: Props) {
                     </div>
                 </header>
 
-                <figure className="bg-white">
-                    <div className="max-w-5xl mx-auto px-4 md:px-6 mt-8 md:mt-12">
-                        <div className="relative w-full h-[280px] sm:h-[400px] md:h-[560px] rounded-2xl overflow-hidden border border-navy-900/10 bg-neegma-gradient">
-                            <Image
-                                src={post.coverImage}
-                                alt={post.coverImageAlt}
-                                fill
-                                className="object-contain"
-                                sizes="(max-width: 1024px) 100vw, 1024px"
-                                priority
+                {gamePreview ? (
+                    <div className="bg-white">
+                        <div className="max-w-sm sm:max-w-md mx-auto px-4 md:px-6 mt-8 md:mt-12">
+                            <GamePreviewCard
+                                preview={gamePreview.preview}
+                                palette={gamePreview.palette}
                             />
                         </div>
                     </div>
-                </figure>
+                ) : (
+                    <figure className="bg-white">
+                        <div className="max-w-5xl mx-auto px-4 md:px-6 mt-8 md:mt-12">
+                            <div className="relative w-full h-[280px] sm:h-[400px] md:h-[560px] overflow-hidden">
+                                <Image
+                                    src={post.coverImage}
+                                    alt={post.coverImageAlt}
+                                    fill
+                                    className="object-contain"
+                                    sizes="(max-width: 1024px) 100vw, 1024px"
+                                    priority
+                                />
+                            </div>
+                        </div>
+                    </figure>
+                )}
+
+                {!gamePreview && post.coverImageCredit && (
+                    <div className="max-w-3xl mx-auto px-4 md:px-6">
+                        <figcaption className="mt-2 text-xs text-navy-900/55 text-center">
+                            Photo by{" "}
+                            {post.coverImageCreditUrl ? (
+                                <a
+                                    href={post.coverImageCreditUrl}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="underline decoration-navy-900/25 hover:text-navy-900/70"
+                                >
+                                    {post.coverImageCredit}
+                                </a>
+                            ) : (
+                                post.coverImageCredit
+                            )}{" "}
+                            on Unsplash
+                        </figcaption>
+                    </div>
+                )}
 
                 <section className="py-14 md:py-20">
                     <div className="max-w-3xl mx-auto px-4 md:px-6">
