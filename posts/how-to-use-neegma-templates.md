@@ -5,7 +5,9 @@ date: "2026-08-08"
 slug: "how-to-use-neegma-templates"
 excerpt: "The invite's gone out for tomorrow and you don't have three hours to write trivia questions. Here's the shortcut that still looks like you planned it for weeks."
 coverImage: "https://res.cloudinary.com/dzpntisxj/image/upload/v1787056990/Neegma/blogposts/gamesnight_1_klhvbh.jpg"
-coverImageAlt: "Friends gathered together for a games night"
+coverImageAlt: "Two people playing a game of Monopoly on a table"
+coverImageCredit: "2H Media"
+coverImageCreditUrl: "https://unsplash.com/photos/two-men-playing-a-game-of-monopoly-on-a-table-pm7QgL2pnSQ"
 keywords:
     - game templates
     - ready to play party games
