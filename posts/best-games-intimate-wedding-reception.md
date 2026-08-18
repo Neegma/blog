@@ -105,7 +105,7 @@ The prize doesn't need to be large. A bottle of wine, a small gift, or just the 
 
 ## How to keep it elegant, not overproduced
 
-- **Ask the MC, a friend, or a planner to host.** The couple shouldn't be managing technology on their own wedding day.
+- **Ask the [MC](https://tryneegma.com/use-cases/mcs), a friend, or a planner to host.** The couple shouldn't be managing technology on their own wedding day.
 - **Keep the games optional in spirit.** Invite people in warmly, but leave room for guests who'd rather watch.
 - **Use a shared screen, not a wall of instructions.** A TV or projector is enough. Keep the host's explanation short.
 - **Personalise lightly.** A few real details about the couple make a game meaningful. Too many private references can leave guests out.

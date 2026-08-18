@@ -38,15 +38,29 @@ A good virtual session comes down to five basics.
 
 ### Friends and family
 
-Lean into games that create stories and silliness: [Song Association](https://tryneegma.com/game/song-association), [Word Art](https://tryneegma.com/game/word-art), [Find the Mole](https://tryneegma.com/game/find-the-mole), Two Truths & a Lie, and Charades.
+Lean into games that create stories and silliness: [Song Association](https://tryneegma.com/game/song-association), [Word Art](https://tryneegma.com/game/word-art), [Find the Mole](https://tryneegma.com/game/find-the-mole), [Two Truths & a Lie](https://tryneegma.com/game/two-truths-and-a-lie), and [Charades](https://tryneegma.com/game/charades).
 
 ### Remote work team
 
-Avoid anything that feels too personal or too performative right at the start. Open with Unscramble or Missing Letter, then move into a collaborative game like [Taboo](https://tryneegma.com/game/taboo) in teams once people have warmed up.
+Avoid anything that feels too personal or too performative right at the start. Open with [Unscramble](https://tryneegma.com/game/unscramble) or [Missing Letter](https://tryneegma.com/game/missing-letter), then move into a collaborative game like [Taboo](https://tryneegma.com/game/taboo) in teams once people have warmed up.
 
 ### Community or club
 
 Make the game feel specific to the people on the call. A handful of custom questions about the shared interest, city, or community turns a familiar format into something that feels built just for them.
+
+### Football night with friends
+
+Build a custom [Trivia](https://tryneegma.com/game/trivia) deck out of club history, transfer gossip, and moments from this season using the Playground, then let [Find the Mole](https://tryneegma.com/game/find-the-mole) settle who actually knows their football and who's been quietly Googling under the table.
+
+### Faith and community gatherings
+
+For a fellowship night or a church small group online, keep it warm rather than competitive. A gentle round of [Two Truths & a Lie](https://tryneegma.com/game/two-truths-and-a-lie) helps newer members get known, and [Social Bingo](https://tryneegma.com/game/bingo) built around shared milestones or in-jokes gives quieter members an easy way in without putting anyone on the spot.
+
+### Remote tech conferences
+
+Between talks or breakout sessions, a fast reset works better than another Q&A. [Unscramble](https://tryneegma.com/game/unscramble) or [Missing Letter](https://tryneegma.com/game/missing-letter) with your own industry terms takes two minutes to run, while [Crack the Code](https://tryneegma.com/game/crack-the-code) suits an audience that already likes solving things. More on running these at scale on the [conferences](https://tryneegma.com/use-cases/conferences) and [facilitators](https://tryneegma.com/use-cases/facilitators) pages.
+
+Whichever format fits your group, save the running order as a [template](https://tryneegma.com/templates) once you've got it right, so the next one is a single click rather than a rebuild.
 
 ## A 75 minute virtual game night run of show
 
@@ -65,7 +79,7 @@ This works for groups of roughly 4 to 20. Adjust the number of rounds rather tha
 
 ### For a fast warm up: Unscramble or Missing Letter
 
-These need almost no briefing. A question appears, players answer from their phones, and the score updates instantly. Use them in the first 15 minutes, while people are still settling in.
+[Unscramble](https://tryneegma.com/game/unscramble) and [Missing Letter](https://tryneegma.com/game/missing-letter) need almost no briefing. A question appears, players answer from their phones, and the score updates instantly. Use them in the first 15 minutes, while people are still settling in.
 
 ### For debate: Find the Mole
 
@@ -77,7 +91,7 @@ In [Find the Mole](https://tryneegma.com/game/find-the-mole), most players get t
 
 ### For collaboration: Taboo or Charades
 
-For groups above 10, split into small teams. In [Taboo](https://tryneegma.com/game/taboo), teams describe a target word without using the forbidden terms on screen. In Charades, they act it out instead. Both are a welcome change of pace after a few individual rounds.
+For groups above 10, split into small teams. In [Taboo](https://tryneegma.com/game/taboo), teams describe a target word without using the forbidden terms on screen. In [Charades](https://tryneegma.com/game/charades), they act it out instead. Both are a welcome change of pace after a few individual rounds.
 
 ## Use Neegma as the shared game room
 
@@ -86,6 +100,8 @@ For groups above 10, split into small teams. In [Taboo](https://tryneegma.com/ga
 The host can run a multi-game session, choose the number of rounds and the pace, publish a hint the moment the room gets stuck, and show a live leaderboard for every game. If someone takes a call, refreshes their browser, or arrives late, they rejoin under the same player name and carry on exactly where they left off.
 
 For a small group, the Free plan is a simple way to start: up to 10 players, all games included, five sessions a month, and 90 minutes per session, forever, at no cost. For a bigger one off online party, the Party Plan is a single payment from £7.99 for 24 hours of unlimited access, and if virtual game night is a standing fixture on your calendar rather than a one off, Pro gives you always on access from £18.99 a month.
+
+Don't want to build the night from scratch either? Browse [ready-made templates](https://tryneegma.com/templates), including full sessions built by Neegma partners specifically for a night like this, open it, and go straight to hosting. Once you've found a running order your group actually likes, save your own version as a template too, so the next one suits whoever's in the room without any extra planning.
 
 ## Five host rules that make the night memorable
 
@@ -96,5 +112,9 @@ For a small group, the Free plan is a simple way to start: up to 10 players, all
 5. **Leave room for ordinary conversation.** The games are there to generate stories, not to fill every single minute.
 
 A virtual game night works when the technology disappears into the background and the people on the call start reacting to each other instead of their screens. Give the group a host, a shared screen, a few good rounds, and a reason to stay for the final leaderboard.
+
+## Would rather just show up and play?
+
+We're building our own regular virtual game nights too, a standing way to meet other people who genuinely love playing games together, not just host them. Follow [Neegma on Instagram](https://www.instagram.com/tryneegma/) or [TikTok](https://www.tiktok.com/@tryneegma) to catch the next one.
 
 [Try Neegma free](https://tryneegma.com) · [Explore all games](https://tryneegma.com/games) · [Browse ready-to-host templates](https://tryneegma.com/templates)

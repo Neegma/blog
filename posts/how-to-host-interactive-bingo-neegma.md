@@ -24,22 +24,22 @@ Bingo is one of the most universally understood games in the world. But paper ca
 
 ## How Neegma Bingo works
 
-Neegma Bingo takes groups of 2 to 100 straight from their mobile browser into a live game.
+Neegma Bingo takes groups of 2 to 100 straight from their mobile browser into a live game, and it isn't the version you're picturing.
 
-1. **Everyone gets a digital card.** Players scan the QR code on the main screen to open their own interactive card, right on their phone.
-2. **The host controls the pace.** The host calls numbers, or social prompts, from the game screen, and the room reacts in real time.
-3. **One tap marking.** As each call lands, players tap their card to mark the matching number or square. No dauber required.
-4. **Instant verification.** The moment someone completes a winning pattern, Neegma checks it and celebrates the winner on the big screen.
+1. **Everyone gets one number, not a full card.** Players scan the QR code on the main screen and land with a single number of their own on their phone.
+2. **The room mingles to build their cards.** The only way to fill your card is to walk over to someone else and ask for their number, then tap it in. Collect as many as the host has set as the target, swap one out if you change your mind, and lock your card in once it's full. Nobody can finish without actually talking to people.
+3. **Then the host calls, and the room reacts.** Once everyone's ready, the host calls numbers one at a time, either picking them or letting Neegma choose at random. Anyone holding a called number from their mingling taps to mark it.
+4. **Instant verification.** The moment someone completes their card, Neegma confirms it and celebrates the winner on the big screen, and the host can keep calling to settle second and third place too.
 
 ## Built in flexibility for any event format
 
-### Flexible round length
+### The mingling is the game, not an add-on
 
-Unlike a rigid paper format, the host sets exactly how many numbers are needed to win, from a quick sprint for a five minute energiser to a longer session for a main party event. The exact range on offer adjusts to how many people are actually in the room, so a small gathering and a packed hall both get a sensible target.
+This isn't classic bingo with a social twist bolted on. Filling a card is physically impossible without approaching someone new, so a room that was standing in its usual small clusters starts moving within the first minute. It's why conference mixers, onboarding weeks, and wedding receptions all lean on it the same way: nobody has to be told to network, the game just won't let them finish otherwise.
 
-### Built for networking, not just numbers
+### Set the target, change the length
 
-Beyond traditional numbers, Bingo on Neegma doubles as an interactive social mixer. Swap in custom prompts through the Playground and you can get attendees moving around the room, striking up conversations with new people, and actually learning something about each other before the raffle even starts.
+The host decides how many numbers each person needs to collect before the room starts. Ask for fewer and it's a five minute energiser. Ask for more and the mingling carries a whole networking hour. Same game, tuned to how long you actually want people on their feet.
 
 ### Zero downloads, effortless rejoining
 
