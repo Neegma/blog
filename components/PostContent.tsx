@@ -56,9 +56,7 @@ const components: Components = {
         </blockquote>
     ),
     hr: () => <hr className="border-navy-900/10 my-10" />,
-    strong: ({ children }) => (
-        <strong className="font-semibold text-navy-900">{children}</strong>
-    ),
+    strong: ({ children }) => <strong className="font-semibold text-navy-900">{children}</strong>,
     em: ({ children }) => <em className="italic">{children}</em>,
     img: ({ src, alt }) => (
         <figure className="my-8">
@@ -81,6 +79,25 @@ const components: Components = {
         <code className="font-mono text-sm bg-navy-900/6 text-navy-900 px-1.5 py-0.5 rounded">
             {children}
         </code>
+    ),
+    table: ({ children }) => (
+        <div className="my-7 overflow-x-auto rounded-xl border border-navy-900/10">
+            <table className="w-full border-collapse text-left">{children}</table>
+        </div>
+    ),
+    thead: ({ children }) => <thead className="bg-navy-900/[0.04]">{children}</thead>,
+    tr: ({ children }) => (
+        <tr className="border-b border-navy-900/10 last:border-b-0">{children}</tr>
+    ),
+    th: ({ children }) => (
+        <th className="px-4 py-3 font-fredoka text-sm font-bold text-navy-900 align-top">
+            {children}
+        </th>
+    ),
+    td: ({ children }) => (
+        <td className="px-4 py-3 font-serif text-[15px] md:text-base leading-relaxed text-navy-900/85 align-top">
+            {children}
+        </td>
     ),
 };
 
