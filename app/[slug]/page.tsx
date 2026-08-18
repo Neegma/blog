@@ -170,6 +170,24 @@ export default async function PostPage({ params }: Props) {
                                     priority
                                 />
                             </div>
+                            {post.coverImageCredit ? (
+                                <figcaption className="mt-2 text-xs text-navy-900/45 text-right">
+                                    Photo by{" "}
+                                    {post.coverImageCreditUrl ? (
+                                        <a
+                                            href={post.coverImageCreditUrl}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="underline decoration-navy-900/25 hover:text-navy-900/70"
+                                        >
+                                            {post.coverImageCredit}
+                                        </a>
+                                    ) : (
+                                        post.coverImageCredit
+                                    )}{" "}
+                                    on Unsplash
+                                </figcaption>
+                            ) : null}
                         </div>
                     </figure>
                 )}

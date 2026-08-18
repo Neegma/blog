@@ -4,6 +4,10 @@ description: "Discover Word Art on Neegma, the quick-thinking party game where p
 date: "2026-08-14"
 slug: "word-art-neegma-party-game"
 excerpt: "A rule appears on screen. Your job is to shout out a word that fits before the clock runs out, and if you freeze, the next team gets a shot at stealing your points."
+coverImage: "https://res.cloudinary.com/dzpntisxj/image/upload/v1787057001/Neegma/blogposts/word_art_1_ib2e2u.jpg"
+coverImageAlt: "A person holding an open floral-patterned book"
+coverImageCredit: "No Revisions"
+coverImageCreditUrl: "https://unsplash.com/photos/person-holding-white-and-pink-floral-book-LBgRhM9tO0c"
 keywords:
     - Word Art party game
     - say the word game online

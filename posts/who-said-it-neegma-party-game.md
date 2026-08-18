@@ -4,6 +4,10 @@ description: "Discover Who Said It on Neegma, the party game where everyone answ
 date: "2026-08-15"
 slug: "who-said-it-neegma-party-game"
 excerpt: "Everyone answers the same question. The answers come back shuffled with no names on them. Then the accusations start."
+coverImage: "https://res.cloudinary.com/dzpntisxj/image/upload/v1787057001/Neegma/blogposts/whosaidit_1_angevb.jpg"
+coverImageAlt: "A diverse team collaborating around a table in an office"
+coverImageCredit: "Vitaly Gariev"
+coverImageCreditUrl: "https://unsplash.com/photos/diverse-team-collaborates-around-a-table-in-office-fm4B1xWEIsU"
 keywords:
     - Who Said It party game
     - anonymous answer game

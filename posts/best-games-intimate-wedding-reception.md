@@ -4,6 +4,10 @@ description: "Thoughtful wedding reception games for small, intimate celebration
 date: "2026-07-23"
 slug: "best-games-intimate-wedding-reception"
 excerpt: "At a small wedding you can see every relationship in the room. Here are eight games that give guests a reason to talk to each other, without ever taking over the day."
+coverImage: "https://res.cloudinary.com/dzpntisxj/image/upload/v1787057143/Neegma/blogposts/wedding_1_ypexaw.jpg"
+coverImageAlt: "Guests gathered around a table at a wedding reception"
+coverImageCredit: "Ben Atkins"
+coverImageCreditUrl: "https://unsplash.com/photos/a-group-of-people-sitting-around-a-white-table-PNXx2A5s5Zk"
 keywords:
     - intimate wedding reception games
     - small wedding reception games

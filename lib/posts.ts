@@ -11,6 +11,10 @@ export interface PostMeta {
     excerpt: string;
     coverImage: string;
     coverImageAlt: string;
+    /** e.g. "Ben Atkins"; shown as "Photo by {name} on Unsplash" under the cover image. */
+    coverImageCredit: string | null;
+    /** Link target for the credit, typically the photo's Unsplash permalink. */
+    coverImageCreditUrl: string | null;
     keywords: string[];
     tags: string[];
     author: string | null;
@@ -44,6 +48,8 @@ function normalise(data: Record<string, unknown>, fallbackSlug: string): PostMet
     const excerpt = String(data.excerpt ?? description);
     const coverImage = data.coverImage ? String(data.coverImage) : FALLBACK_COVER;
     const coverImageAlt = String(data.coverImageAlt ?? title);
+    const coverImageCredit = data.coverImageCredit ? String(data.coverImageCredit) : null;
+    const coverImageCreditUrl = data.coverImageCreditUrl ? String(data.coverImageCreditUrl) : null;
     const keywords = toArray(data.keywords);
     const tags = toArray(data.tags);
     const author = data.author ? String(data.author) : null;
@@ -57,6 +63,8 @@ function normalise(data: Record<string, unknown>, fallbackSlug: string): PostMet
         excerpt,
         coverImage,
         coverImageAlt,
+        coverImageCredit,
+        coverImageCreditUrl,
         keywords,
         tags,
         author,

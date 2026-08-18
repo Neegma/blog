@@ -4,6 +4,10 @@ description: "Practical corporate event games for team socials, brand activation
 date: "2026-07-30"
 slug: "corporate-event-games-get-people-talking"
 excerpt: "Great venue, great food, great speakers, and people still standing in familiar circles checking their phones. Here's what actually fixes that."
+coverImage: "https://res.cloudinary.com/dzpntisxj/image/upload/v1787057143/Neegma/blogposts/karaoke_1_ksffcx.jpg"
+coverImageAlt: "A group of colleagues in costumes posing together at an event"
+coverImageCredit: "Singa Karaoke"
+coverImageCreditUrl: "https://unsplash.com/photos/a-group-of-people-in-costumes-posing-for-a-picture-TV5YHK9Ce5U"
 keywords:
     - corporate event games
     - corporate event icebreakers

@@ -4,6 +4,10 @@ description: "A step-by-step guide to hosting large-scale Taboo and Charades ses
 date: "2026-08-06"
 slug: "how-to-run-taboo-charades-large-groups"
 excerpt: "Taboo and Charades are undefeated at bringing energy to a room. Here's how to run both for a hall of 100 without a single physical card."
+coverImage: "https://res.cloudinary.com/dzpntisxj/image/upload/v1787057029/Neegma/blogposts/charades_1_eyseux.jpg"
+coverImageAlt: "Wooden letter tiles spelling out words"
+coverImageCredit: "Amador Loureiro"
+coverImageCreditUrl: "https://unsplash.com/photos/letter-wood-stamp-lot-BVyNlchWqzs"
 keywords:
     - Taboo and Charades for large groups
     - team party games 50 to 100 people

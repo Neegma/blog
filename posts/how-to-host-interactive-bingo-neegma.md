@@ -4,6 +4,10 @@ description: "See how Neegma turns classic Bingo into a dynamic, browser-based s
 date: "2026-08-02"
 slug: "how-to-host-interactive-bingo-neegma"
 excerpt: "Paper cards, daubers, and a manual number cage feel dated fast at a modern party. Here's Bingo rebuilt as a live browser game, no printing required."
+coverImage: "https://res.cloudinary.com/dzpntisxj/image/upload/v1787056090/Neegma/blogposts/bingo_cover_jy4am3.jpg"
+coverImageAlt: "Red and white bingo discs"
+coverImageCredit: "Mick Haupt"
+coverImageCreditUrl: "https://unsplash.com/photos/red-and-white-round-plastic-3UbsiRcrFV4"
 keywords:
     - online social bingo
     - interactive bingo game

@@ -4,6 +4,8 @@ description: "Discover how Neegma's ready-to-play session templates help hosts, 
 date: "2026-08-08"
 slug: "how-to-use-neegma-templates"
 excerpt: "The invite's gone out for tomorrow and you don't have three hours to write trivia questions. Here's the shortcut that still looks like you planned it for weeks."
+coverImage: "https://res.cloudinary.com/dzpntisxj/image/upload/v1787056990/Neegma/blogposts/gamesnight_1_klhvbh.jpg"
+coverImageAlt: "Friends gathered together for a games night"
 keywords:
     - game templates
     - ready to play party games

@@ -4,6 +4,10 @@ description: "A practical guide to planning a virtual game night that feels live
 date: "2026-08-04"
 slug: "how-to-host-unforgettable-virtual-game-night"
 excerpt: "It's 7:05pm. A few people are on the call, someone's fixing their headphones, and someone else is asking what they're actually playing. Here's how to fix that."
+coverImage: "https://res.cloudinary.com/dzpntisxj/image/upload/v1787056991/Neegma/blogposts/virtual_1_iiyf5b.jpg"
+coverImageAlt: "A laptop set up on a table for a video call"
+coverImageCredit: "Gabriel Benois"
+coverImageCreditUrl: "https://unsplash.com/photos/black-and-silver-laptop-computer-on-brown-wooden-table-qnWPjzewewA"
 keywords:
     - how to host a virtual game night
     - virtual game night ideas

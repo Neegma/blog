@@ -4,6 +4,10 @@ description: "No apps, no downloads, no faff. Here's how to run free browser par
 date: "2026-07-20"
 slug: "best-free-online-party-games-browser"
 excerpt: "The moment you ask a group to download an app, half the room checks out. Here's how to run free, no-download party games in your browser, from a living room of 4 to a hall of 100."
+coverImage: "https://res.cloudinary.com/dzpntisxj/image/upload/v1787056990/Neegma/blogposts/gameon_1_bd78jv.jpg"
+coverImageAlt: "A GAME ON neon sign lit up"
+coverImageCredit: "ooneiroslyl"
+coverImageCreditUrl: "https://unsplash.com/photos/game-on-neon-signage-turned-on-G2RM3fk7VQ8"
 keywords:
     - free online party games
     - browser party games no download

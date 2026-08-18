@@ -4,6 +4,10 @@ description: "Practical team bonding games for company offsites, from quiet arri
 date: "2026-08-12"
 slug: "team-bonding-games-company-offsites"
 excerpt: "The awkward part of an offsite is rarely the strategy session. It's the ten minutes before it, when everyone's scanning the room for a familiar face."
+coverImage: "https://res.cloudinary.com/dzpntisxj/image/upload/v1787057002/Neegma/blogposts/outdoor_games_1_axxq1k.jpg"
+coverImageAlt: "A giant outdoor game frame set up on a grass lawn"
+coverImageCredit: "Meritt Thomas"
+coverImageCreditUrl: "https://unsplash.com/photos/red-and-green-metal-frame-on-green-grass-field-during-daytime-6d6bTwUDTE0"
 keywords:
     - team bonding games for company offsites
     - company offsite activities

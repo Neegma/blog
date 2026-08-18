@@ -4,6 +4,10 @@ description: "How facilitators and conference organisers use Neegma to re-energi
 date: "2026-07-27"
 slug: "conference-icebreaker-games-neegma"
 excerpt: "Every organiser knows the mid afternoon slump. Here's how to turn a 10 minute transition into the most talked about part of the day, without a single new app."
+coverImage: "https://res.cloudinary.com/dzpntisxj/image/upload/v1787056990/Neegma/blogposts/conference_1_d36s6q.jpg"
+coverImageAlt: "A crowd watching a stage at a conference"
+coverImageCredit: "Terren Hurst"
+coverImageCreditUrl: "https://unsplash.com/photos/people-watching-concert-during-night-time-blgOFmPIlr0"
 keywords:
     - conference icebreaker games
     - interactive conference games
