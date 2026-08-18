@@ -160,7 +160,7 @@ export default async function PostPage({ params }: Props) {
                 ) : (
                     <figure className="bg-white">
                         <div className="max-w-5xl mx-auto px-4 md:px-6 mt-8 md:mt-12">
-                            <div className="relative w-full h-[280px] sm:h-[400px] md:h-[560px] rounded-2xl overflow-hidden border border-navy-900/10 bg-neegma-gradient">
+                            <div className="relative w-full h-[280px] sm:h-[400px] md:h-[560px] overflow-hidden">
                                 <Image
                                     src={post.coverImage}
                                     alt={post.coverImageAlt}
@@ -170,26 +170,29 @@ export default async function PostPage({ params }: Props) {
                                     priority
                                 />
                             </div>
-                            {post.coverImageCredit ? (
-                                <figcaption className="mt-2 text-xs text-navy-900/45 text-right">
-                                    Photo by{" "}
-                                    {post.coverImageCreditUrl ? (
-                                        <a
-                                            href={post.coverImageCreditUrl}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="underline decoration-navy-900/25 hover:text-navy-900/70"
-                                        >
-                                            {post.coverImageCredit}
-                                        </a>
-                                    ) : (
-                                        post.coverImageCredit
-                                    )}{" "}
-                                    on Unsplash
-                                </figcaption>
-                            ) : null}
                         </div>
                     </figure>
+                )}
+
+                {!gamePreview && post.coverImageCredit && (
+                    <div className="max-w-3xl mx-auto px-4 md:px-6">
+                        <figcaption className="mt-2 text-xs text-navy-900/55 text-center">
+                            Photo by{" "}
+                            {post.coverImageCreditUrl ? (
+                                <a
+                                    href={post.coverImageCreditUrl}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="underline decoration-navy-900/25 hover:text-navy-900/70"
+                                >
+                                    {post.coverImageCredit}
+                                </a>
+                            ) : (
+                                post.coverImageCredit
+                            )}{" "}
+                            on Unsplash
+                        </figcaption>
+                    </div>
                 )}
 
                 <section className="py-14 md:py-20">
